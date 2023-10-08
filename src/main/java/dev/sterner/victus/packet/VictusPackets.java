@@ -53,24 +53,23 @@ public class VictusPackets {
 
     public static class S2C extends LodestoneClientPacket {
 
-        private final int entityId;
+        private final int index;
         private final boolean callHandler;
 
         public S2C(int entityId, boolean callHandler) {
-            this.entityId = entityId;
+            this.index = entityId;
             this.callHandler = callHandler;
         }
 
         public void encode(FriendlyByteBuf buf) {
-            buf.writeInt(entityId);
+            buf.writeVarInt(index);
             buf.writeBoolean(callHandler);
         }
 
         @OnlyIn(Dist.CLIENT)
         @Override
         public void execute(Supplier<NetworkEvent.Context> context) {
-            Entity entity = Minecraft.getInstance().level.getEntity(entityId);
-            Minecraft.getInstance().execute(HeartAspect.createBreakEvent(Minecraft.getInstance(), entityId, callHandler));
+            Minecraft.getInstance().execute(HeartAspect.createBreakEvent(Minecraft.getInstance(), index, callHandler));
         }
 
         public static void register(SimpleChannel instance, int index) {
@@ -78,7 +77,7 @@ public class VictusPackets {
         }
 
         public static S2C decode(FriendlyByteBuf buf) {
-            return new S2C(buf.readInt(), buf.readBoolean());
+            return new S2C(buf.readVarInt(), buf.readBoolean());
         }
     }
 

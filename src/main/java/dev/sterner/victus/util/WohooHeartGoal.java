@@ -70,7 +70,7 @@ public class WohooHeartGoal extends Goal {
         this.spellCooldown--;
         if (this.spellCooldown == 0) {
             target.setItem(new ItemStack(VictusItemRegistry.EVOKING_HEART_ASPECT.get()));
-            //TODO VictusParticleEvents.CONVERT_ASPECT.spawn(target.getWorld(), target.getPos());
+            VictusParticleEvents.spawnConvert(target.level(), target.position());
 
             evoker.playSound(((SpellcastingIllagerEntityAccessor) evoker).victus_invokeGetCastSpellSound(), 1.0F, 1.0F);
         }

@@ -3,6 +3,7 @@ package dev.sterner.victus.item;
 import dev.sterner.victus.capability.VictusPlayerComponent;
 import dev.sterner.victus.hearts.HeartAspect;
 import dev.sterner.victus.registry.VictusItemRegistry;
+import dev.sterner.victus.util.VictusParticleEvents;
 import net.minecraft.ChatFormatting;
 import net.minecraft.locale.Language;
 import net.minecraft.network.chat.Component;
@@ -52,7 +53,7 @@ public class HeartAspectItem extends EdibleItem {
         boolean bl = component.victusHandler.addAspect(aspectType.factory().apply(eater), eater);
 
 
-        //TODO VictusParticleEvents.HEART_PARTICLES.spawn(world, eater.position(), false);
+        VictusParticleEvents.spawnHeart(world, eater.position(), false);
     }
 
     @Override

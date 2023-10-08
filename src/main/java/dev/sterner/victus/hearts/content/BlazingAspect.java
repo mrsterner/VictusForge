@@ -2,6 +2,7 @@ package dev.sterner.victus.hearts.content;
 
 import dev.sterner.victus.Victus;
 import dev.sterner.victus.hearts.HeartAspect;
+import dev.sterner.victus.util.VictusParticleEvents;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.TamableAnimal;
@@ -18,7 +19,7 @@ public class BlazingAspect extends HeartAspect {
 
     @Override
     public boolean handleBreak(DamageSource source, float damage, float originalHealth) {
-        //TODO VictusParticleEvents.BLAZING_FLAMES.spawn(player.level(), player.position());
+        VictusParticleEvents.spawnBlazing(player.level(), player.position());
 
         var entities = player.level().getEntitiesOfClass(LivingEntity.class, new AABB(player.blockPosition()).inflate(4), (p) -> p != player && !(p instanceof TamableAnimal tameable && tameable.isOwnedBy(player)));
 

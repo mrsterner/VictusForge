@@ -4,6 +4,7 @@ package dev.sterner.victus.hearts.content;
 import dev.sterner.victus.Victus;
 import dev.sterner.victus.hearts.HeartAspect;
 import dev.sterner.victus.registry.VictusItemRegistry;
+import dev.sterner.victus.util.VictusParticleEvents;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvents;
@@ -11,6 +12,7 @@ import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.phys.Vec3;
 
 public class LightAspect extends HeartAspect {
 
@@ -33,9 +35,16 @@ public class LightAspect extends HeartAspect {
     protected void handleBreakClient() {
         Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(VictusItemRegistry.LIGHT_HEART_ASPECT.get()));
 
-        //TODO ClientParticles.setParticleCount(40);
-        //ClientParticles.setVelocity(new Vec3(0, .1, 0));
-        //ClientParticles.spawn(ParticleTypes.POOF, player.level(), player.position().add(0, 1, 0), 3);
+        VictusParticleEvents.spawn(
+                ParticleTypes.POOF,
+                player.level(),
+                player.position().add(0,1,0),
+                new Vec3(0,.1,0),
+                40,
+                3,
+                false
+
+        );
 
         Minecraft.getInstance().particleEngine.createTrackingEmitter(player, ParticleTypes.POOF, 10);
     }

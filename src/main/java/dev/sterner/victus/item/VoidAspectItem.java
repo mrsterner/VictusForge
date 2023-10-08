@@ -3,6 +3,7 @@ package dev.sterner.victus.item;
 
 import dev.sterner.victus.capability.VictusPlayerComponent;
 import dev.sterner.victus.registry.VictusItemRegistry;
+import dev.sterner.victus.util.VictusParticleEvents;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -35,6 +36,6 @@ public class VoidAspectItem extends EdibleItem {
         component.victusHandler.removeAspect(component.player);
         eater.hurt(world.damageSources().magic(), eater.getHealth() + 1 - (component.victusHandler.effectiveSize() + 1) * 2);
 
-        //TODO VictusParticleEvents.HEART_PARTICLES.spawn(world, eater.position(), true);
+        VictusParticleEvents.spawnHeart(world, eater.position(), true);
     }
 }

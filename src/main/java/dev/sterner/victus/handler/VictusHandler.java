@@ -149,9 +149,10 @@ public class VictusHandler {
         final int nextIndex = index + 1;
         final var nextAspect = getAspect(nextIndex);
         if (nextAspect != null) damageAspect(player, nextIndex, source, damage, originalHealth);
+        VictusPlayerComponent.syncTrackingAndSelf(player);
 
         VictusPacketRegistry.VICTUS_CHANNEL.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) player),
-                new VictusPackets.S2C(player.getId(), aspect.onBroken(source, damage, originalHealth))
+                new VictusPackets.S2C(index, aspect.onBroken(source, damage, originalHealth))
         );
     }
 
