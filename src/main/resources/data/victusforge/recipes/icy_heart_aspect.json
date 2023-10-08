@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "tst",
+    "sus",
+    "tst"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:blue_ice"
+    },
+    "u": {
+      "item": "victusforge:blank_heart_aspect"
+    },
+    "t": {
+      "item": "minecraft:packed_ice"
+    }
+  },
+  "result": {
+    "item": "victusforge:icy_heart_aspect"
+  }
+}

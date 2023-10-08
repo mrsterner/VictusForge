@@ -1,0 +1,15 @@
+{
+  "name": "Aspect Maintenance",
+  "icon": "victusforge:broken_heart",
+  "category": "victusforge:basics",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "To add a new aspect to your health bar, simply eat the respective item and it will go into the first free slot from the\nleft. You {gold}cannot add new aspects at arbitrary positions{} inside your bar, so be mindful about possible aspects\nyou might want to add in the future."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "- Finding a {light_purple}Broken Heart{} in a {gold}Buried Treasure{} and eating it. This will deal some\n  damage and remove all your aspects, giving them back in item form.\n\n- Throwing a {light_purple}Blank Heart Aspect{black} into fire. This will create a {light_purple}Void Aspect{black}\n  that, when eaten, voids the first aspect on your bar, starting from the right.{}{}{}{}"
+    }
+  ]
+}

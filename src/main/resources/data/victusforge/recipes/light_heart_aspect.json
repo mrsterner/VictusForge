@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "tst",
+    "sus",
+    "tst"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "u": {
+      "item": "victusforge:blank_heart_aspect"
+    },
+    "t": {
+      "item": "minecraft:feather"
+    }
+  },
+  "result": {
+    "item": "victusforge:light_heart_aspect"
+  }
+}

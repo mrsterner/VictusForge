@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sss",
+    "sus",
+    "sss"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:sugar"
+    },
+    "u": {
+      "item": "victusforge:blank_heart_aspect"
+    }
+  },
+  "result": {
+    "item": "victusforge:sweet_heart_aspect"
+  }
+}

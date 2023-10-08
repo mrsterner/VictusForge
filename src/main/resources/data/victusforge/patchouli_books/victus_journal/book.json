@@ -1,0 +1,8 @@
+{
+  "name": "item.victusforge.victus_journal",
+  "landing_text": "victusforge.landing",
+  "version": "1",
+  "custom_book_item": "victusforge:victus_journal",
+  "dont_generate_book": true,
+  "use_resource_pack": true
+}

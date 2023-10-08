@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sss",
+    "sus",
+    "sss"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:glass"
+    },
+    "u": {
+      "item": "victusforge:blank_heart_aspect"
+    }
+  },
+  "result": {
+    "item": "victusforge:potion_heart_aspect"
+  }
+}

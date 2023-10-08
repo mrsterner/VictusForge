@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "tst",
+    "sus",
+    "tst"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:chorus_fruit"
+    },
+    "u": {
+      "item": "victusforge:blank_heart_aspect"
+    },
+    "t": {
+      "item": "minecraft:dragon_breath"
+    }
+  },
+  "result": {
+    "item": "victusforge:draconic_heart_aspect"
+  }
+}

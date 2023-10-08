@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sss",
+    "sas",
+    "sss"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:cooked_beef"
+    },
+    "a": {
+      "item": "victusforge:blank_heart_aspect"
+    }
+  },
+  "result": {
+    "item": "victusforge:grilled_heart_aspect"
+  }
+}

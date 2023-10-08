@@ -1,0 +1,19 @@
+{
+  "name": "Introduction",
+  "icon": "victusforge:blank_heart_aspect",
+  "category": "victusforge:basics",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Victus is built around the idea of {gold}Heart Aspects{}. These are essentially secondary abilities applied\non top of your health bar, most of which activate when the heart they cover gets broken. After being broken, they have\nto [recharge](^victus:basics/recharging), which takes a certain amount of time per aspect."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The health bar you will slowly build up while playing is {gold}kept between deaths{}. It may also exceed 10 aspects, in\nwhich case only the first 10 will recharge and activate should you lose access to your additional hearts.\n\nTo get started, take a look at [Crafting Aspects](^victus:basics/crafting_aspects) for basics on how to obtain your\nfirst aspect, as well as [Aspect Maintenance](^victus:basics/aspect_maintenance) before you decide which one to choose.\n"
+    },
+    {
+      "type": "patchouli:text",
+      "text": ""
+    }
+  ]
+}

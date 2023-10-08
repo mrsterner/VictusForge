@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "victusforge:archery_heart_aspect",
+      "victusforge:blazing_heart_aspect",
+      "victusforge:bundle_heart_aspect",
+      "victusforge:creeper_heart_aspect",
+      "victusforge:cheese_heart_aspect",
+      "victusforge:diamond_heart_aspect",
+      "victusforge:draconic_heart_aspect",
+      "victusforge:emerald_heart_aspect",
+      "victusforge:evoking_heart_aspect",
+      "victusforge:golden_heart_aspect",
+      "victusforge:grilled_heart_aspect",
+      "victusforge:icy_heart_aspect",
+      "victusforge:iron_heart_aspect",
+      "victusforge:lapis_heart_aspect",
+      "victusforge:light_heart_aspect",
+      "victusforge:ocean_heart_aspect",
+      "victusforge:potion_heart_aspect",
+      "victusforge:sweet_heart_aspect",
+      "victusforge:totem_heart_aspect"
+    ]
+  },
+  "criteria": {
+    "has_journal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "victusforge:victus_journal"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_journal"
+    ]
+  ]
+}

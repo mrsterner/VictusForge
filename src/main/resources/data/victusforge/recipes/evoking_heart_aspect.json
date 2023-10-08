@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "tst",
+    "sus",
+    "tst"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:flint"
+    },
+    "u": {
+      "item": "victusforge:blank_heart_aspect"
+    },
+    "t": {
+      "item": "minecraft:feather"
+    }
+  },
+  "result": {
+    "item": "victusforge:evoking_heart_aspect"
+  }
+}
